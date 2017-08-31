@@ -50,25 +50,25 @@
 || ===================================================
 || Using default storage file : addressbook.txt
 || Enter command: || [Command entered:  sfdfd]
-|| Invalid command format: sfdfd 
+|| Invalid command format: sfdfd
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || find: Finds all persons whose names contain any of the specified keywords (case-sensitive) and displays them as a list with index numbers.
 || 	Parameters: KEYWORD [MORE_KEYWORDS]
 || 	Example: find alice bob charlie
-|| 
+||
 || list: Displays all persons as a list with index numbers.
 || 	Example: list
-|| 
+||
 || delete: Deletes a person identified by the index number used in the last find/list call.
 || 	Parameters: INDEX
 || 	Example: delete 1
-|| 
+||
 || clear: Clears address book permanently.
 || 	Example: clear
-|| 
+||
 || exit: Exits the program.	Example: exit
 || help: Shows program usage instructions.	Example: help
 || ===================================================
@@ -76,57 +76,57 @@
 || Address book has been cleared!
 || ===================================================
 || Enter command: || [Command entered:  list]
-|| 
+||
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  add wrong args wrong args]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add Valid Name p/12345 valid@email.butNoPrefix]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add []\[;] p/12345 e/valid@e.mail]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add Valid Name p/not_numbers e/valid@e.mail]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add Valid Name p/12345 e/notAnEmail]
-|| Invalid command format: add 
+|| Invalid command format: add
 || add: Adds a person to the address book.
 || 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  add Adam Brown p/111111 e/adam@gmail.com]
 || New person added: Adam Brown, Phone: 111111, Email: adam@gmail.com
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 
+||
 || 1 persons found!
 || ===================================================
 || Enter command: || [Command entered:  add Betsy Choo p/222222 e/benchoo@nus.edu.sg]
@@ -135,7 +135,7 @@
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
-|| 
+||
 || 2 persons found!
 || ===================================================
 || Enter command: || [Command entered:  add Charlie Dickson e/charlie.d@nus.edu.sg p/333333]
@@ -145,7 +145,7 @@
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
-|| 
+||
 || 3 persons found!
 || ===================================================
 || Enter command: || [Command entered:  add Dickson Ee e/dickson@nus.edu.sg p/444444]
@@ -156,7 +156,7 @@
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
 || 	4. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
-|| 
+||
 || 4 persons found!
 || ===================================================
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@notreal.potato]
@@ -168,69 +168,69 @@
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
 || 	4. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
 || 	5. Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
-|| 
+||
 || 5 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find]
-|| 
+||
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find bet]
-|| 
+||
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find 23912039120]
-|| 
+||
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find betsy]
-|| 
+||
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Betsy]
 || 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
-|| 
+||
 || 1 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Dickson]
 || 	1. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
 || 	2. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
-|| 
+||
 || 2 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Charlie Betsy]
 || 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 	2. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
-|| 
+||
 || 2 persons found!
 || ===================================================
 || Enter command: || [Command entered:  delete]
-|| Invalid command format: delete 
+|| Invalid command format: delete
 || delete: Deletes a person identified by the index number used in the last find/list call.
 || 	Parameters: INDEX
 || 	Example: delete 1
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  delete should be only one number]
-|| Invalid command format: delete 
+|| Invalid command format: delete
 || delete: Deletes a person identified by the index number used in the last find/list call.
 || 	Parameters: INDEX
 || 	Example: delete 1
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  delete -1]
-|| Invalid command format: delete 
+|| Invalid command format: delete
 || delete: Deletes a person identified by the index number used in the last find/list call.
 || 	Parameters: INDEX
 || 	Example: delete 1
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  delete 0]
-|| Invalid command format: delete 
+|| Invalid command format: delete
 || delete: Deletes a person identified by the index number used in the last find/list call.
 || 	Parameters: INDEX
 || 	Example: delete 1
-|| 
+||
 || ===================================================
 || Enter command: || [Command entered:  delete 3]
 || The person index provided is invalid
@@ -246,21 +246,42 @@
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
 || 	4. Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
-|| 
+||
 || 4 persons found!
 || ===================================================
 || Enter command: || [Command entered:  delete 4]
 || Deleted Person: Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
 || ===================================================
+|| Enter command: || [Command entered:  update]
+|| Invalid command format: update
+|| update: Updates a person to the address book.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: update John Doe p/98765432 e/johnd@gmail.com
+||
+|| ===================================================
+|| Enter command: || [Command entered:  update 0]
+|| Invalid command format: update
+|| update: Updates a person to the address book.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: update John Doe p/98765432 e/johnd@gmail.com
+||
+|| ===================================================
+|| Enter command: || [Command entered:  update Adam Brown p/555555 e/adambrown@gmail.com]
+|| Person updated: Adam Brown, Phone: 555555, Email: adambrown@gmail.com
+|| ===================================================
+|| Enter command: || [Command entered:  update Kevin Baker p/666666 e/kevinbaker@gmail.com]
+|| Person not found in Address Book!
+|| Person update failed: Kevin Baker, Phone: 666666, Email: kevinbaker@gmail.com
+|| ===================================================
 || Enter command: || [Command entered:  list]
-|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 	1. Adam Brown  Phone Number: 555555  Email: adambrown@gmail.com
 || 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
 || 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
-|| 
+||
 || 3 persons found!
 || ===================================================
 || Enter command: || [Command entered:  delete 1]
-|| Deleted Person: Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| Deleted Person: Adam Brown  Phone Number: 555555  Email: adambrown@gmail.com
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg

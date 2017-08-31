@@ -92,6 +92,20 @@
   list
 
 ##########################################################
+# test update command
+##########################################################
+
+  # should catch invalid args format
+  update
+  update 0
+
+  # updates person correctly
+  update Adam Brown p/555555 e/adambrown@gmail.com
+
+  # should catch person not in Address Book
+  update Kevin Baker p/666666 e/kevinbaker@gmail.com
+
+##########################################################
 # test clear command
 ##########################################################
 

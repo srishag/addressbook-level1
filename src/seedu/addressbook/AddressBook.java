@@ -188,9 +188,8 @@ public class AddressBook {
     private static final String PERSON_PROPERTY_EMAIL = "email";
     private static final String PERSON_PROPERTY_PHONE = "phone";
     private static final ArrayList<HashMap<String,String>> ALL_PERSONS = new ArrayList<>();
-    /**
-     *
-     */
+
+    /*
     private static HashMap<String,String> convertPersonToHash(String[] person){
         HashMap<String,String> temp = new HashMap<>();
         temp.put(PERSON_PROPERTY_NAME, person[PERSON_DATA_INDEX_NAME]);
@@ -198,6 +197,8 @@ public class AddressBook {
         temp.put(PERSON_PROPERTY_PHONE, person[PERSON_DATA_INDEX_PHONE]);
         return temp;
     }
+    */
+
     /**
      * Stores the most recent list of persons shown to the user as a result of a user command.
      * This is a subset of the full list. Deleting persons in the pull list does not delete
